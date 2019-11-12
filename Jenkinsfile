@@ -8,7 +8,7 @@ pipeline{
         }
         stage("Run Test"){
             steps{
-                sh "docker-compose up book-flight-module"
+                sh "docker-compose up search-module1 search-module2 book-flight-module1 book-flight-module2"
             }
         }
         stage("Stop Grid"){
